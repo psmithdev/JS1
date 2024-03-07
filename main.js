@@ -3,81 +3,72 @@ function changeText() {
   console.log("You clicked the button!!");
 }
 
-const myName1 = "Tiffany";
-console.log(myName1);
-
-// ### first task ###
-// declare your name and call the variable something
-// console.log the variable
-
-const myName2 = "Matt";
-console.log(myName2);
-
-let number1 = 10;
-let number2 = 20;
-let sum = number1 + number2;
-console.log("The sum is: " + sum);
-
-// ### second task ###
-// add two numbers and sum it
-// declare one number
-// declare second number
-// calculate the sum
-// console.log the results and output to the console
-
-let x = 100;
-let y = 30;
-let z = x * y;
-console.log(z);
-
-// Thanks for letting me jump into the vscode. Great job Tiffany.. Good speed and tempo. My pleasure
-
-// ### third task ###
-// declare hasCompleted variable and set true or false
-// use an if-else statement to check the condition and log it
-// console.log("Task complete")
-// console.log("Task incomplete")
-
-let hasCompleted = false;
-
-if (hasCompleted) {
-  console.log("Task complete");
-} else {
-  console.log("Task incomplete");
-}
-
-let var1 = 22;
-
-if (var1 === 22) {
-  console.log("Task Complete");
-} else {
-  console.log("Task Incomplete");
-}
-
-// does it create 2 different objects?
-
-// ### Functions ###
-
-// declare a function, a name
-// one parameter inside the paratheses -----> function name()
-// return the function, with parameter and some text
+// declare a variable
 // favorite food
+// favorite color
+// console.log
 
-function myFavoriteFood(food) {
-  return "My favorite food is " + food;
+let Favfood = "pizza";
+let Favcolor = "blue";
+console.log(Favfood);
+console.log(Favcolor);
+//yes i remember boolean
+
+let new_Fav_Food = "Buffalo wings";
+
+if (new_Fav_Food == "Buffalo wings") {
+  console.log(true);
+} else {
+  console.log(false);
 }
-console.log(myFavoriteFood("Tacos"));
 
-function myFavoriteFood1(food1) {
-  return food1 + " is my favorite food";
+// equality check == or ===
+// single = assigment
+
+let favoriteFood = "burgers";
+let favoriteColor = "Blue";
+console.log(favoriteFood);
+console.log(favoriteColor);
+
+// for loop
+
+// for (initalize; condition increment/decrement ++ or --)
+
+// ### for loop task ###
+// google how to write a for loop
+// loop your favorite food or favorite color 5 times
+// either increment ++ or decrement --
+// greater than > or less than <
+
+const n = 5;
+
+for (let i = 1; i <= n; i++) {
+  console.log("i, Favfood");
 }
-console.log(myFavoriteFood1("Buffale Wings"));
-
-let message2 = "I like to ride my bike";
-
-function showMessage() {
-  let message = "Hello, my name is Parker";
-  console.log(message);
+Ditto;
+for (let x = 1; x <= 5; x++) {
+  console.log(x, new_Fav_Food);
 }
 
-showMessage(console.log(message2));
+// ### DOM ###
+// manipulate the DOM
+// select it with a QuerySelector
+// create the element
+// append the element
+// alter the element
+
+function redText() {
+  const redButton = document.querySelector("#demo");
+  const redParagraph = document.createElement("div");
+  redParagraph.textContent = "this is a red paragraph";
+  redButton.appendChild(redParagraph);
+}
+
+g = document.createElement("div");
+g.setAttribute("id", "Div1");
+document
+  .getElementById("Div")
+  // something like this
+  .document.getElementById("demo").style.color = "orange";
+
+// create a button with onclick and a function
